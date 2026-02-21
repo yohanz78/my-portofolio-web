@@ -1,6 +1,6 @@
 /* Navigation bar */
 nav {
-    background-color: var(--primary-color);
+    background-color: var(--background-color);
     padding: 20px;
     z-index: 999;
     top: 0;
