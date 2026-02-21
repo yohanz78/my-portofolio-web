@@ -39,3 +39,17 @@ body {
     margin-right: 100px;
     margin-bottom: 50px;
 }
+
+.glass-effect {
+    /* 1. Add a semi-transparent background */
+    background: rgba(255, 255, 255, 0.2);
+    /* 2. Apply the blur effect to the background behind the element */
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px); /* Vendor prefix for compatibility */
+    /* 3. Add subtle borders and shadow */
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    /* 4. Style the container */
+    border-radius: 16px;
+    padding: 20px;
+}
