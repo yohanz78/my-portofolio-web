@@ -1,269 +1,313 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yohanes | Portfolio</title>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Yohanes | Portfolio</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com" rel="stylesheet" />
 
-    <link rel="stylesheet" href="./styles/global.css">
-    <link rel="stylesheet" href="./styles/style.css">
-<body>
-    
-    <nav>
-        <ul class="nav-item">
-            <li><a href="#hero" class="nav-link">Home</a></li>
-            <li><a href="#about" class="nav-link">About</a></li>
-            <li><a href="#projects" class="nav-link">Projects</a></li>
-            <li><a href="#contact" class="nav-link">Contact</a></li>
-        </ul>
-    </nav>
+        <link rel="stylesheet" href="./styles/global.css" />
+        <link rel="stylesheet" href="./styles/style.css" />
+    </head>
+    <body>
+        <!-- Block: nav -->
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="#hero" class="nav__link">Home</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#about" class="nav__link">About</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#projects" class="nav__link">Projects</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#contact" class="nav__link">Contact</a>
+                </li>
+            </ul>
+        </nav>
 
-    <section id="hero" class="container">
-        <!-- Background gradient effect -->
-        <div></div>
+        <!-- Block: hero -->
+        <section id="hero" class="hero">
+            <div class="hero__bg"></div>
 
-        <div class="hero-content content content-center">
-            <div class="greeting">
-                <span>Hello, I'm</span>
-            </div>
-
-            <h1 class="name">
-                <span class="text-primary">Yohanes</span>
-                <span class="text-foreground">Handoyo</span>
-            </h1>
-
-            <h2 class="title text-muted">Fresh Graduate | Web Developer</h2>
-
-            <p class="description text-muted">
-                Passionate about creating beautiful, functional, and user-friendly web applications. Ready to bring fresh perspectives and innovative solutions to your team.
-            </p>
-
-            <!-- CTA Buttons -->
-            <div>
-                <button>View My Work</button>
-
-                <button>Get In Touch</button>
-            </div>
-            
-            <!-- Social Links -->
-            <div>
-                <a href="" target="_blank">
-                    Github icon
-                </a>
-
-                <a href="" target="_blank">
-                    LinkedIn icon
-                </a>
-
-                <a href="" target="_blank">
-                    Email icon
-                </a>
-
-            </div>
-            <!-- Scroll Indicator -->
-            <button>
-                Arrow down icon
-            </button>
-        </div>
-    </section>
-
-    <section id="about" class="container">
-        <div class="content">
-
-            <div class="content-center">
-                <h2>
-                    <span class="text-primary">About</span>
-                    <span class="text-foreground">Me</span>
-                </h2>
-                <!-- Underline -->
-                <div class="underline"></div>
-            </div>
-
-            <div>
-                <!-- Image -->
-                <div>
-                    <img src="" alt="profile-picture">
+            <div class="hero__content">
+                <div class="hero__greeting">
+                    <span class="hero__greeting-text">Hello, I'm</span>
                 </div>
 
-                <!-- Content -->
-                <div>
-                    <h3 class="text-primary">Fresh Graduate & Aspiring Developer</h3>
-                    <p class="text-muted">
-                        I'm a recent graduate with a passion for creating innovative web 
-                        solutions. My journey in tech began during my university years, 
-                        where I discovered the perfect blend of creativity and logic in 
-                        software development.
-                    </p>
-                    <p class="text-muted">
-                        I'm eager to contribute to meaningful projects and grow alongside 
-                        talented professionals. I believe in continuous learning and 
-                        staying updated with the latest industry trends and best 
-                        practices.
-                    </p>
-                </div>
+                <h1 class="hero__name">
+                    <span class="text--primary">Yohanes</span>
+                    <span class="text--secondary">Handoyo</span>
+                </h1>
 
-                <!-- Tech Stacks -->
-                <div>
-                    <h4>Tech Stack</h4>
-                    <div>
-                        <span>Chip</span>
-                        <span>Chip</span>
-                        <span>Chip</span>
-                    </div>
-                </div>
+                <h2 class="hero__subtitle">Fresh Graduate | Web Developer</h2>
 
-            </div>
-
-            <!-- Skills Grid -->
-            <div>
-                <div>
-                    <div>skill icon</div>
-                    <h4>skill title</h4>
-                    <p>skill description</p>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <section id="projects" class="container">
-        <div class="content">
-
-            <div class="content-center">
-                <h2>
-                    <span class="text-primary">My</span>
-                    <span class="text-foreground">Projects</span>
-                </h2>
-                <!-- Underline -->
-                <div class="underline"></div>
-
-                <p>
-                    Here are some of my recent projects that showcase my skills and
-                    passion for development.
+                <p class="hero__description">
+                    Passionate about creating beautiful, functional, and
+                    user-friendly web applications. Ready to bring fresh
+                    perspectives and innovative solutions to your team.
                 </p>
-            </div>
 
-            <div class="project-grid">
-
-                <div class="project-card">
-                    <!-- On Hover -->
-                    <div>
-                        <img src="" alt="project-image">
-                        <div>
-                            <a href="">Github icon</a>
-                            <a href="">Demo Link</a>
-                        </div>
-                    </div>
-
-                    <!-- Contents -->
-                    <div>
-                        <h3>Project Title</h3>
-                        <p>Description</p>
-
-                        <!-- Tags -->
-                        <div>
-                            <span>Chip</span>
-                            <span>Chip</span>
-                            <span>Chip</span>
-                        </div>
-                    </div>
+                <!-- CTA Buttons -->
+                <div class="hero__cta">
+                    <button class="hero__cta-btn hero__cta-btn text--primary">
+                        View My Work
+                    </button>
+                    <button class="hero__cta-btn hero__cta-btn--outline">
+                        Get In Touch
+                    </button>
                 </div>
 
-            </div>
-
-        </div>
-    </section>
-
-    <section id="contact" class="container">
-        <div class="content">
-
-            <div class="content-center">
-                <h2>
-                    <span>Get In</span>
-                    <span>Touch</span>
-                </h2>
-                <!-- Underline -->
-                <div class="underline"></div>
-
-                <p>
-                    I'm always open to new opportunities and collaborations. Feel free
-                    to reach out!
-                </p>
-            </div>
-
-            <div class="contact-grid">
-                <!-- Contact Form -->
-                <div class="contact-form">
-                    <form action="">
-                        <div>
-                            <label for="name" class="input-label">Name</label>
-                            <input type="text" id="name" name="name">
-                        </div>
-                        <div>
-                            <label for="email" class="input-label">Email</label>
-                            <input type="text" id="email" name="email">
-                        </div>
-                        <div>
-                            <label for="message" class="input-label">Message</label>
-                            <input type="text" id="message" name="message">
-                        </div>
-
-                        <button>Send Message</button>
-                    </form>
+                <!-- Social Links -->
+                <div class="hero__socials">
+                    <a href="" target="_blank" class="hero__social-link">
+                        Github icon
+                    </a>
+                    <a href="" target="_blank" class="hero__social-link">
+                        LinkedIn icon
+                    </a>
+                    <a href="" target="_blank" class="hero__social-link">
+                        Email icon
+                    </a>
                 </div>
 
-                <!-- Contact Information -->
-                <div class="contact-info">
-                    <div class="contact-details">
+                <!-- Scroll Indicator -->
+                <button class="hero__scroll-indicator">Arrow down icon</button>
+            </div>
+        </section>
 
-                        <div class="info-card">
-                            <div>info icon</div>
-                            <div>
-                                <p class="text-muted">Email</p>
-                                <a href="">email</a>
-                            </div>
-                        </div>
-                        <div class="info-card">
-                            <div>info icon</div>
-                            <div>
-                                <p class="text-muted">Phone</p>
-                                <a href="">phone</a>
-                            </div>
-                        </div>
-                        <div class="info-card">
-                            <div>info icon</div>
-                            <div>
-                                <p class="text-muted">Location</p>
-                                <p>location</p>
-                            </div>
-                        </div>
+        <!-- Block: about -->
+        <section id="about" class="about">
+            <div class="about__content">
+                <div class="about__header">
+                    <h2 class="about__title">
+                        <span class="text--primary">About</span>
+                        <span class="text--secondary">Me</span>
+                    </h2>
+                    <div class="about__underline"></div>
+                </div>
 
-                        <div class="social-links">
-                            <h3>Connect With Me</h3>
-                            <a href="">Github Icon</a>
-                            <a href="">LinkedIn Icon</a>
-                        </div>
+                <div class="about__body">
+                    <!-- Image -->
+                    <div class="about__image-wrapper">
+                        <img
+                            src=""
+                            alt="profile-picture"
+                            class="about__image"
+                        />
+                    </div>
 
-                        <div class="additional-info">
-                            <h3>Let's Work Together</h3>
-                            <p>
-                                I'm currently looking for full-time opportunities where I can
-                                contribute, learn, and grow. If you have an exciting project or
-                                opportunity, I'd love to hear from you!
-                            </p>
-                        </div>
+                    <!-- Content -->
+                    <div class="about__text">
+                        <h3 class="about__subtitle">
+                            Fresh Graduate & Aspiring Developer
+                        </h3>
+                        <p class="about__description">
+                            I'm a recent graduate with a passion for creating
+                            innovative web solutions. My journey in tech began
+                            during my university years, where I discovered the
+                            perfect blend of creativity and logic in software
+                            development.
+                        </p>
+                        <p class="about__description">
+                            I'm eager to contribute to meaningful projects and
+                            grow alongside talented professionals. I believe in
+                            continuous learning and staying updated with the
+                            latest industry trends and best practices.
+                        </p>
+                    </div>
 
+                    <!-- Tech Stacks -->
+                    <div class="about__stack">
+                        <h4 class="about__stack-title">Tech Stack</h4>
+                        <div class="about__stack-list">
+                            <span class="about__stack-chip">Chip</span>
+                            <span class="about__stack-chip">Chip</span>
+                            <span class="about__stack-chip">Chip</span>
+                        </div>
                     </div>
                 </div>
 
+                <!-- Skills Grid -->
+                <div class="skills">
+                    <div class="skills__card">
+                        <div class="skills__icon">skill icon</div>
+                        <h4 class="skills__title">skill title</h4>
+                        <p class="skills__description">skill description</p>
+                    </div>
+                </div>
             </div>
+        </section>
 
-        </div>        
-    </section>
+        <!-- Block: projects -->
+        <section id="projects" class="projects">
+            <div class="projects__content">
+                <div class="projects__header">
+                    <h2 class="projects__title">
+                        <span class="text--primary">My</span>
+                        <span class="text--secondary">Projects</span>
+                    </h2>
+                    <div class="projects__underline"></div>
+                    <p class="projects__description">
+                        Here are some of my recent projects that showcase my
+                        skills and passion for development.
+                    </p>
+                </div>
 
-</body>
+                <div class="projects__grid">
+                    <div class="project-card">
+                        <!-- Image with hover overlay -->
+                        <div class="project-card__image-wrapper">
+                            <img
+                                src=""
+                                alt="project-image"
+                                class="project-card__image"
+                            />
+                            <div class="project-card__overlay">
+                                <a href="" class="project-card__overlay-link"
+                                    >Github icon</a
+                                >
+                                <a href="" class="project-card__overlay-link"
+                                    >Demo Link</a
+                                >
+                            </div>
+                        </div>
+
+                        <!-- Contents -->
+                        <div class="project-card__body">
+                            <h3 class="project-card__title">Project Title</h3>
+                            <p class="project-card__description">Description</p>
+
+                            <!-- Tags -->
+                            <div class="project-card__tags">
+                                <span class="project-card__tag">Chip</span>
+                                <span class="project-card__tag">Chip</span>
+                                <span class="project-card__tag">Chip</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Block: contact -->
+        <section id="contact" class="contact">
+            <div class="contact__content">
+                <div class="contact__header">
+                    <h2 class="contact__title">
+                        <span class="text--primary">Get In</span>
+                        <span class="text--secondary">Touch</span>
+                    </h2>
+                    <div class="contact__underline"></div>
+                    <p class="contact__description">
+                        I'm always open to new opportunities and collaborations.
+                        Feel free to reach out!
+                    </p>
+                </div>
+
+                <div class="contact__grid">
+                    <!-- Contact Form -->
+                    <div class="contact__form-wrapper">
+                        <form action="" class="contact__form">
+                            <div class="contact__form-group">
+                                <label for="name" class="contact__label"
+                                    >Name</label
+                                >
+                                <input
+                                    type="text"
+                                    id="name"
+                                    name="name"
+                                    class="contact__input"
+                                />
+                            </div>
+                            <div class="contact__form-group">
+                                <label for="email" class="contact__label"
+                                    >Email</label
+                                >
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    class="contact__input"
+                                />
+                            </div>
+                            <div class="contact__form-group">
+                                <label for="message" class="contact__label"
+                                    >Message</label
+                                >
+                                <textarea
+                                    id="message"
+                                    name="message"
+                                    class="contact__textarea"
+                                ></textarea>
+                            </div>
+                            <button type="submit" class="contact__submit-btn">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+
+                    <!-- Contact Information -->
+                    <div class="contact__info">
+                        <div class="contact__details">
+                            <div class="contact__info-card">
+                                <div class="contact__info-icon">info icon</div>
+                                <div class="contact__info-body">
+                                    <p class="contact__info-label">Email</p>
+                                    <a href="" class="contact__info-link"
+                                        >email</a
+                                    >
+                                </div>
+                            </div>
+                            <div class="contact__info-card">
+                                <div class="contact__info-icon">info icon</div>
+                                <div class="contact__info-body">
+                                    <p class="contact__info-label">Phone</p>
+                                    <a href="" class="contact__info-link"
+                                        >phone</a
+                                    >
+                                </div>
+                            </div>
+                            <div class="contact__info-card">
+                                <div class="contact__info-icon">info icon</div>
+                                <div class="contact__info-body">
+                                    <p class="contact__info-label">Location</p>
+                                    <p class="contact__info-value">location</p>
+                                </div>
+                            </div>
+
+                            <div class="contact__socials">
+                                <h3 class="contact__socials-title">
+                                    Connect With Me
+                                </h3>
+                                <a href="" class="contact__social-link"
+                                    >Github Icon</a
+                                >
+                                <a href="" class="contact__social-link"
+                                    >LinkedIn Icon</a
+                                >
+                            </div>
+
+                            <div class="contact__cta">
+                                <h3 class="contact__cta-title">
+                                    Let's Work Together
+                                </h3>
+                                <p class="contact__cta-text">
+                                    I'm currently looking for full-time
+                                    opportunities where I can contribute, learn,
+                                    and grow. If you have an exciting project or
+                                    opportunity, I'd love to hear from you!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
 </html>
