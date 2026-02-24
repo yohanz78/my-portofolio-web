@@ -43,3 +43,35 @@ document.addEventListener("keydown", function (e) {
         e.preventDefault();
     }
 });
+
+// ── Carousel (autoplay only) ──
+document.querySelectorAll("[data-carousel]").forEach((carousel) => {
+    const track = carousel.querySelector(".carousel__track");
+    const slides = carousel.querySelectorAll(".carousel__slide");
+    const total = slides.length;
+    let current = 0;
+    let timer;
+
+    function goTo(index) {
+        current = (index + total) % total;
+        track.style.transform = `translateX(-${current * 100}%)`;
+    }
+
+    function startAutoplay() {
+        timer = setInterval(() => goTo(current + 1), 2500);
+    }
+
+    function stopAutoplay() {
+        clearInterval(timer);
+    }
+
+    // Pause while user hovers so overlay links remain clickable
+    const card = carousel.closest(".project-card");
+    if (card) {
+        card.addEventListener("mouseenter", stopAutoplay);
+        card.addEventListener("mouseleave", startAutoplay);
+    }
+
+    goTo(0);
+    startAutoplay();
+});
