@@ -523,3 +523,228 @@ nav {
     border: 1px solid var(--border-color);
     border-radius: 9999px;
 }
+
+/* Contact Section */
+/* Contact Section */
+.contact {
+    min-height: 100vh;
+    padding: 80px 16px;
+    background-color: color-mix(in srgb, var(--card-color) 50%, transparent);
+}
+
+.contact__content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Contact Header */
+.contact__header {
+    text-align: center;
+    margin-bottom: 64px;
+}
+
+.contact__title {
+    font-family: var(--font-secondary) !important;
+    font-size: clamp(2rem, 5vw, 3rem);
+    margin-bottom: 16px;
+}
+
+.contact__underline {
+    width: 80px;
+    height: 4px;
+    background-color: var(--primary-color);
+    margin: 0 auto 16px;
+    border-radius: 2px;
+}
+
+.contact__description {
+    color: var(--text-color-muted);
+    font-size: 16px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Contact Grid */
+.contact__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 48px;
+}
+
+@media (min-width: 1024px) {
+    .contact__grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Contact Form */
+.contact__form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.contact__form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.contact__label {
+    font-size: 14px;
+    color: var(--text-color-primary);
+}
+
+.contact__input,
+.contact__textarea {
+    width: 100%;
+    padding: 12px 16px;
+    background-color: var(--input-color);
+    color: var(--text-color-primary);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    font-size: 14px;
+    font-family: var(--font-primary);
+    outline: none;
+    transition: border-color 0.2s ease;
+}
+
+.contact__input::placeholder,
+.contact__textarea::placeholder {
+    color: var(--text-color-muted);
+}
+
+.contact__input:focus,
+.contact__textarea:focus {
+    border-color: var(--primary-color);
+}
+
+.contact__textarea {
+    resize: none;
+}
+
+.contact__submit-btn {
+    width: 100%;
+    padding: 12px 32px;
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: var(--font-primary);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 15px rgba(var(--primary-rgb), 0.3);
+}
+
+.contact__submit-btn:hover {
+    opacity: 0.9;
+    box-shadow: 0 6px 20px rgba(var(--primary-rgb), 0.5);
+}
+
+/* Contact Info */
+.contact__info {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+/* Contact Details */
+.contact__details {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.contact__info-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 16px;
+    background-color: var(--card-color);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    transition: border-color 0.2s ease;
+}
+
+.contact__info-card:hover {
+    border-color: var(--primary-color);
+}
+
+.contact__info-icon {
+    color: var(--primary-color);
+    margin-top: 2px;
+    flex-shrink: 0;
+}
+
+.contact__info-label {
+    font-size: 12px;
+    color: var(--text-color-muted);
+    margin-bottom: 4px;
+}
+
+.contact__info-link {
+    color: var(--text-color-primary);
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.2s ease;
+}
+
+.contact__info-link:hover {
+    color: var(--primary-color);
+}
+
+.contact__info-value {
+    color: var(--text-color-primary);
+    font-size: 14px;
+}
+
+/* Contact Socials */
+.contact__socials-title {
+    font-size: 20px;
+    margin-bottom: 16px;
+    color: var(--text-color-primary);
+}
+
+.contact__socials-list {
+    display: flex;
+    gap: 16px;
+}
+
+.contact__social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    background-color: var(--card-color);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    color: var(--text-color-primary);
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.contact__social-link:hover {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+/* Contact CTA */
+.contact__cta {
+    padding: 24px;
+    background-color: var(--card-color);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+}
+
+.contact__cta-title {
+    font-size: 20px;
+    margin-bottom: 12px;
+    color: var(--text-color-primary);
+}
+
+.contact__cta-text {
+    font-size: 14px;
+    color: var(--text-color-muted);
+    line-height: 1.7;
+}
