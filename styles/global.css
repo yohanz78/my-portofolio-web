@@ -28,6 +28,14 @@
     --text-color-secondary: #10b981;
     --text-color-tertiary: #212121;
     --text-color-muted: #9ca3af;
+
+    --font-size: 16px;
+    --text-2xl: 2rem;
+    --text-xl: 1.5rem;
+    --text-lg: 1.25rem;
+    --text-base: 1rem;
+    --font-weight-medium: 500;
+    --font-weight-normal: 400;
 }
 
 body {
@@ -53,6 +61,53 @@ body {
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     /* 4. Style the container */
     padding: 20px;
+}
+
+/* Text Headers */
+html {
+    font-size: var(--font-size);
+}
+
+h1 {
+    font-size: var(--text-2xl);
+    font-weight: var(--font-weight-medium);
+    line-height: 1.5;
+}
+
+h2 {
+    font-size: var(--text-xl);
+    font-weight: var(--font-weight-medium);
+    line-height: 1.5;
+}
+
+h3 {
+    font-size: var(--text-lg);
+    font-weight: var(--font-weight-medium);
+    line-height: 1.5;
+}
+
+h4 {
+    font-size: var(--text-base);
+    font-weight: var(--font-weight-medium);
+    line-height: 1.5;
+}
+
+label {
+    font-size: var(--text-base);
+    font-weight: var(--font-weight-medium);
+    line-height: 1.5;
+}
+
+button {
+    font-size: var(--text-base);
+    font-weight: var(--font-weight-medium);
+    line-height: 1.5;
+}
+
+input {
+    font-size: var(--text-base);
+    font-weight: var(--font-weight-normal);
+    line-height: 1.5;
 }
 
 /* Text Colors */
