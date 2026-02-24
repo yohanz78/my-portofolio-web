@@ -68,6 +68,7 @@ nav {
 .hero__name {
     font-family: var(--font-secondary) !important;
     font-size: clamp(2.5rem, 7vw, 5rem);
+    font-weight: 800 !important;
     margin-bottom: 24px;
     letter-spacing: -0.02em;
     line-height: 1.1;
@@ -75,6 +76,7 @@ nav {
 
 .hero__subtitle {
     font-size: clamp(1.2rem, 3vw, 2rem);
+    font-weight: 600 !important;
     margin-bottom: 32px;
     font-weight: 400;
 }
@@ -179,7 +181,6 @@ nav {
 .about {
     min-height: 100vh;
     padding: 80px 16px;
-    background-color: color-mix(in srgb, var(--card-color) 50%, transparent);
 }
 
 .about__content {
@@ -526,7 +527,6 @@ nav {
 .contact {
     min-height: 100vh;
     padding: 80px 16px;
-    background-color: color-mix(in srgb, var(--card-color) 50%, transparent);
 }
 
 .contact__content {

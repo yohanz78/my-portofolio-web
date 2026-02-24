@@ -34,6 +34,7 @@
     --text-xl: 1.5rem;
     --text-lg: 1.25rem;
     --text-base: 1rem;
+    --font-weight-bold: 700;
     --font-weight-medium: 500;
     --font-weight-normal: 400;
 }
@@ -46,7 +47,6 @@ body {
 
 .container {
     margin-left: 100px;
-    margin-top: auto;
     margin-right: 100px;
     margin-bottom: 50px;
 }
@@ -76,13 +76,13 @@ h1 {
 
 h2 {
     font-size: var(--text-xl);
-    font-weight: var(--font-weight-medium);
+    font-weight: var(--font-weight-bold);
     line-height: 1.5;
 }
 
 h3 {
     font-size: var(--text-lg);
-    font-weight: var(--font-weight-medium);
+    font-weight: var(--font-weight-bold);
     line-height: 1.5;
 }
 
