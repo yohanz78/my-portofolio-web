@@ -126,3 +126,9 @@ input {
 .text--muted {
     color: var(--text-color-muted) !important;
 }
+
+/* Disable image drag */
+img {
+    -webkit-user-drag: none;
+    pointer-events: none;
+}
