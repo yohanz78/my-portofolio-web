@@ -90,8 +90,8 @@ h3 {
 }
 
 h4 {
-    font-size: var(--text-sm);
-    font-weight: var(--font-weight-extra-light);
+    font-size: var(--text-base);
+    font-weight: var(--font-weight-medium);
     line-height: 1.5;
 }
 

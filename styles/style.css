@@ -432,6 +432,8 @@ nav {
     border-radius: 12px;
     overflow: hidden;
     transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
 }
 
 .project-card:hover {
@@ -533,17 +535,20 @@ nav {
 /* Project Card Body */
 .project-card__body {
     padding: 24px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
 }
 
 .project-card__title {
-    font-size: 20px;
-    margin-bottom: 2 px;
+    margin-bottom: 5px;
     color: var(--text-color-primary);
 }
 
 .project-card__category {
+    font-size: var(--text-sm);
     color: var(--text-color-primary);
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     opacity: 0.3;
 }
 
@@ -559,6 +564,7 @@ nav {
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
+    margin-top: auto;
 }
 
 .project-card__tag {
