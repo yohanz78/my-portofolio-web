@@ -1,10 +1,26 @@
 /* Navigation bar */
 nav {
     background-color: var(--background-color);
-    padding: 20px;
+    padding: 16px 20px;
     z-index: 999;
     top: 0;
     position: sticky;
+}
+
+.nav__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav__logo {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--primary-color);
+    text-decoration: none;
+    letter-spacing: 1px;
 }
 
 .nav__list {
@@ -13,6 +29,8 @@ nav {
     justify-content: center;
     align-items: center;
     gap: 100px;
+    margin: 0;
+    padding: 0;
 }
 
 .nav__link {
@@ -25,6 +43,42 @@ nav {
     background-color: var(--hover-color);
     padding: 10px 20px;
     border-radius: 10px;
+}
+
+/* Hamburger button */
+.nav__hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+    z-index: 1000;
+}
+
+.nav__hamburger-line {
+    display: block;
+    width: 25px;
+    height: 2px;
+    background-color: var(--text-color-primary);
+    border-radius: 2px;
+    transition: all 0.3s ease;
+    transform-origin: center;
+}
+
+/* Hamburger open state (X icon) */
+.nav__hamburger.is-open .nav__hamburger-line:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+}
+
+.nav__hamburger.is-open .nav__hamburger-line:nth-child(2) {
+    opacity: 0;
+    transform: scaleX(0);
+}
+
+.nav__hamburger.is-open .nav__hamburger-line:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
 }
 
 /* Hero Section */
@@ -95,13 +149,6 @@ nav {
     align-items: center;
     gap: 16px;
     margin-bottom: 48px;
-}
-
-@media (min-width: 640px) {
-    .hero__cta {
-        flex-direction: row;
-        justify-content: center;
-    }
 }
 
 .hero__cta-btn {
@@ -217,12 +264,6 @@ nav {
     margin-bottom: 64px;
 }
 
-@media (min-width: 1024px) {
-    .about__body {
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
 /* About Image */
 .about__image-wrapper {
     position: relative;
@@ -231,12 +272,6 @@ nav {
     box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
     aspect-ratio: 1 / 1;
     order: 2;
-}
-
-@media (min-width: 1024px) {
-    .about__image-wrapper {
-        order: 1;
-    }
 }
 
 .about__image {
@@ -268,12 +303,6 @@ nav {
 /* About Text */
 .about__text {
     order: 1;
-}
-
-@media (min-width: 1024px) {
-    .about__text {
-        order: 2;
-    }
 }
 
 .about__subtitle {
@@ -325,18 +354,6 @@ nav {
     display: grid;
     grid-template-columns: 1fr;
     gap: 24px;
-}
-
-@media (min-width: 640px) {
-    .skills {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (min-width: 1024px) {
-    .skills {
-        grid-template-columns: repeat(4, 1fr);
-    }
 }
 
 .skills__card {
@@ -411,18 +428,6 @@ nav {
     display: grid;
     grid-template-columns: 1fr;
     gap: 32px;
-}
-
-@media (min-width: 768px) {
-    .projects__grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (min-width: 1024px) {
-    .projects__grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
 }
 
 /* Project Card */
@@ -616,12 +621,6 @@ nav {
     display: grid;
     grid-template-columns: 1fr;
     gap: 48px;
-}
-
-@media (min-width: 1024px) {
-    .contact__grid {
-        grid-template-columns: 1fr 1fr;
-    }
 }
 
 /* Contact Form */

@@ -27,9 +27,9 @@ document.addEventListener("contextmenu", function (e) {
 // Disable common keyboard shortcuts
 document.addEventListener("keydown", function (e) {
     // Disable F12
-    if (e.key === "F12") {
-        e.preventDefault();
-    }
+    // if (e.key === "F12") {
+    //     e.preventDefault();
+    // }
     // Disable Ctrl+Shift+I / Ctrl+Shift+J / Ctrl+Shift+C (DevTools)
     if (e.ctrlKey && e.shiftKey && ["I", "J", "C"].includes(e.key)) {
         e.preventDefault();
@@ -74,4 +74,44 @@ document.querySelectorAll("[data-carousel]").forEach((carousel) => {
 
     goTo(0);
     startAutoplay();
+});
+
+/**
+ * Resposive Web Design
+ */
+// ── Hamburger Menu ──
+const hamburger = document.getElementById("hamburger");
+const navList = document.getElementById("navList");
+
+// Create overlay element
+const overlay = document.createElement("div");
+overlay.classList.add("nav__overlay");
+document.body.appendChild(overlay);
+
+function openMenu() {
+    hamburger.classList.add("is-open");
+    navList.classList.add("is-open");
+    overlay.classList.add("is-open");
+    hamburger.setAttribute("aria-expanded", "true");
+    document.body.style.overflow = "hidden";
+}
+
+function closeMenu() {
+    hamburger.classList.remove("is-open");
+    navList.classList.remove("is-open");
+    overlay.classList.remove("is-open");
+    hamburger.setAttribute("aria-expanded", "false");
+    document.body.style.overflow = "";
+}
+
+hamburger.addEventListener("click", () => {
+    const isOpen = hamburger.classList.contains("is-open");
+    isOpen ? closeMenu() : openMenu();
+});
+
+overlay.addEventListener("click", closeMenu);
+
+// Close menu when a nav link is clicked
+navList.querySelectorAll(".nav__link").forEach((link) => {
+    link.addEventListener("click", closeMenu);
 });

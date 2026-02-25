@@ -14,24 +14,38 @@
 
         <link rel="stylesheet" href="./styles/global.css" />
         <link rel="stylesheet" href="./styles/style.css" />
+        <link rel="stylesheet" href="./styles/responsive.css" />
     </head>
     <body>
         <!-- Block: nav -->
         <nav class="nav glass--effect">
-            <ul class="nav__list">
-                <li class="nav__item">
-                    <a href="#hero" class="nav__link">Home</a>
-                </li>
-                <li class="nav__item">
-                    <a href="#about" class="nav__link">About</a>
-                </li>
-                <li class="nav__item">
-                    <a href="#projects" class="nav__link">Projects</a>
-                </li>
-                <li class="nav__item">
-                    <a href="#contact" class="nav__link">Contact</a>
-                </li>
-            </ul>
+            <div class="nav__container">
+                <a href="#hero" class="nav__logo">YH</a>
+                <button
+                    class="nav__hamburger"
+                    id="hamburger"
+                    aria-label="Toggle menu"
+                    aria-expanded="false"
+                >
+                    <span class="nav__hamburger-line"></span>
+                    <span class="nav__hamburger-line"></span>
+                    <span class="nav__hamburger-line"></span>
+                </button>
+                <ul class="nav__list" id="navList">
+                    <li class="nav__item">
+                        <a href="#hero" class="nav__link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">About</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#projects" class="nav__link">Projects</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
 
         <!-- Block: hero -->
