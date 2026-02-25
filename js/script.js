@@ -27,9 +27,9 @@ document.addEventListener("contextmenu", function (e) {
 // Disable common keyboard shortcuts
 document.addEventListener("keydown", function (e) {
     // Disable F12
-    // if (e.key === "F12") {
-    //     e.preventDefault();
-    // }
+    if (e.key === "F12") {
+        e.preventDefault();
+    }
     // Disable Ctrl+Shift+I / Ctrl+Shift+J / Ctrl+Shift+C (DevTools)
     if (e.ctrlKey && e.shiftKey && ["I", "J", "C"].includes(e.key)) {
         e.preventDefault();
