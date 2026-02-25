@@ -48,6 +48,31 @@
     }
 }
 
+/* ── Section Container Margins ── */
+@media (max-width: 480px) {
+    /* Small phones */
+    .container {
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    /* Tablets & large phones */
+    .container {
+        margin-left: 24px;
+        margin-right: 24px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    /* Small desktops / landscape tablets */
+    .container {
+        margin-left: 48px;
+        margin-right: 48px;
+    }
+}
+
 @media (min-width: 640px) {
     .hero__cta {
         flex-direction: row;

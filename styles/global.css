@@ -36,6 +36,8 @@
     --text-lg: 1.25rem;
     --text-base: 1rem;
     --text-sm: 0.875rem;
+    --text-xs: 0.75rem;
+
     --font-weight-bold: 700;
     --font-weight-medium: 500;
     --font-weight-normal: 400;
@@ -102,13 +104,19 @@ label {
 }
 
 button {
-    font-size: var(--text-base);
+    font-size: clamp(var(--text-xs), 2.5vw, var(--text-base));
     font-weight: var(--font-weight-medium);
     line-height: 1.5;
 }
 
 input {
-    font-size: var(--text-base);
+    font-size: clamp(var(--text-xs), 2.5vw, var(--text-base));
+    font-weight: var(--font-weight-normal);
+    line-height: 1.5;
+}
+
+textarea {
+    font-size: clamp(var(--text-xs), 2.5vw, var(--text-base));
     font-weight: var(--font-weight-normal);
     line-height: 1.5;
 }
