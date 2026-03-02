@@ -48,6 +48,7 @@ body {
     font-family: var(--font-primary);
     background-color: var(--background-color);
     color: var(--text-color-primary);
+    overflow-x: hidden;
 }
 
 .container {
@@ -70,6 +71,7 @@ body {
 
 /* Text Headers */
 html {
+    overflow-x: hidden;
     font-size: var(--font-size);
 }
 
