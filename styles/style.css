@@ -1,12 +1,12 @@
 /* Navigation bar */
 nav {
-    padding: 0; /* Remove padding — let .nav__container handle it */
+    padding: 0;
     z-index: 999;
     top: 0;
     left: 0;
     right: 0;
     width: 100%;
-    position: fixed; /* Use fixed instead of sticky */
+    position: sticky;
 }
 
 .nav__container {

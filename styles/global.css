@@ -44,10 +44,17 @@
     --font-weight-extra-light: 200;
 }
 
+html {
+    font-size: var(--font-size);
+}
+
 body {
     font-family: var(--font-primary);
     background-color: var(--background-color);
     color: var(--text-color-primary);
+}
+
+.app-wrapper {
     overflow-x: hidden;
 }
 
@@ -68,11 +75,6 @@ body {
 }
 
 /* Text Headers */
-html {
-    overflow-x: hidden;
-    font-size: var(--font-size);
-}
-
 h1 {
     font-size: var(--text-2xl);
     font-weight: var(--font-weight-medium);
