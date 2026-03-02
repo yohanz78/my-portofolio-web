@@ -1,10 +1,12 @@
 /* Navigation bar */
 nav {
-    background-color: var(--background-color);
-    padding: 16px 20px;
+    padding: 0; /* Remove padding — let .nav__container handle it */
     z-index: 999;
     top: 0;
-    position: sticky;
+    left: 0;
+    right: 0;
+    width: 100%;
+    position: fixed; /* Use fixed instead of sticky */
 }
 
 .nav__container {
@@ -13,6 +15,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 16px 24px; /* Move padding here */
 }
 
 .nav__logo {
@@ -87,7 +90,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 64px 16px 16px;
+    padding: 100px 16px 16px;
     position: relative;
     overflow: hidden;
 }
@@ -227,7 +230,7 @@ nav {
 /* About Section */
 .about {
     min-height: 100vh;
-    padding: 80px 16px;
+    padding: 50px 16px;
 }
 
 .about__content {
@@ -388,7 +391,7 @@ nav {
 /* Projects Section */
 .projects {
     min-height: 100vh;
-    padding: 80px 16px;
+    padding: 50px 16px;
 }
 
 .projects__content {
@@ -582,7 +585,7 @@ nav {
 /* Contact Section */
 .contact {
     min-height: 100vh;
-    padding: 80px 16px;
+    padding: 50px 16px;
 }
 
 .contact__content {

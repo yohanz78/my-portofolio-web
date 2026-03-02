@@ -65,8 +65,6 @@ body {
     -webkit-backdrop-filter: blur(5px); /* Vendor prefix for compatibility */
     /* 3. Add subtle shadow */
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    /* 4. Style the container */
-    padding: 20px;
 }
 
 /* Text Headers */
