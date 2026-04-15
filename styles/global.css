@@ -54,10 +54,6 @@ body {
     color: var(--text-color-primary);
 }
 
-.app-wrapper {
-    overflow-x: hidden;
-}
-
 .container {
     margin-left: 100px;
     margin-right: 100px;
